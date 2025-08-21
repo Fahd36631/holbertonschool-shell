@@ -1,3 +1,2 @@
 #!/bin/bash
-chown vincent:staff ./*
-chown vincent:staff .[^.]*
+find . -mindepth 1 -maxdepth 1 -exec chown vincent:staff {} +
